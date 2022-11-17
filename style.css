@@ -1,0 +1,92 @@
+body {
+    background-color: lightblue;
+    margin: 50px auto;
+    padding: 50px 50px;
+    width: 59%;
+  }
+  
+  .box {
+      border: 50px solid white;
+      border-radius: 30px;
+    background-color: white;
+  }
+  
+  h1 {
+    color: #004E89;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #AAA;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: #004E89;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+  }
+  
+  u {
+    background: yellow;
+  }
+  .actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .actions a {
+    background-color: #9DD1F1;
+    border-radius: 3px;
+    color: #004E89;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .game {
+    color: #333;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 120px;
+    text-align: right;
+  }
+  
+  button {
+      padding: 7px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #3498db;
+  }
