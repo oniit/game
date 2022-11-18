@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Let's Play!</title>
-  <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="box">  
-  <h2>A Simple Game</h2>
-  <h1>Let's play it!</h1>
-  <p>Halo, mari bermain game! Kali ini kamu akan bermain dengan sebuah <b>Robot pintar</b>.</p>
-  <p>Kalian berdua akan diberikan masing-masing <b>10 buah kelereng</b> untuk dipertaruhkan.</p> 
-  <p>Kamu diminta untuk memberikan beberapa kelereng untuk dipertaruhkan (Robot juga).</p> 
-  <p><br>Total kelereng darimu dan Robot akan <b>diakumulasi</b>. </p> 
-  <p>Lalu kamu dan Robot harus <b>menebak</b> jumlah akumulasinya. </p> 
-  <h3><br><b><i>Pemenang: yang menebak <u>selisih akumulasi</u> paling sedikit!</i></b></h3>
-<script>
-/* Example JavaScript function  */
-function exampleFunction() {
-	alert("I am embedded into the HTML file!")
-	}
-</script>
-  
-  <!--div class="actions">
-    <a href="#">Start Game</a>
-    <a href="#">Reset Game</a>
-</div-->
-  
-  <div class="game">
-    <br><br>
-    <form id="frm1" action="/action_page.php">
-  Jumlah yang dikumpulkan: <input type="number" name="give" id="give" value=""/><br><br>
-  Jumlah yang ditebak: <input type="number" name="guess" id="guess" value=""/><br><br>
-    <button onclick="gundu(give, guess)">Result</button>
-    </form>
-  </div>
-</div>
+  <head>
+    <title>Let's Play!</title>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="box">  
+      <h2>A Simple Game</h2>
+        <h1>Let's play it!</h1>
+          <p>Halo, mari bermain game! Kali ini kamu akan bermain dengan sebuah <b>Robot pintar</b>.</p>
+          <p>Kalian berdua akan diberikan masing-masing <b>10 buah kelereng</b> di awal permainan.</p> 
+          <p>Kamu diminta untuk memberikan beberapa kelereng untuk dipertaruhkan (Robot juga).</p> 
+          <p><br>Total kelereng yang dipertaruhkan darimu dan Robot akan <b>diakumulasi</b>. </p> 
+          <p>Lalu kamu dan Robot harus <b>menebak</b> jumlah akumulasinya. </p> 
+            <h3><br><b><i>Pemenang: yang menebak <u>selisih akumulasi</u> paling sedikit!</i></b></h3>
+    
+      <!--div class="actions">
+        <a href="#">Start Game</a>
+        <a href="#">Reset Game</a>
+      </div-->
+      
+      <div class="game">
+        <br><br>
+        <form id="frm1" action="/action_page.php">
+        Jumlah yang dikumpulkan: <input type="number" name="give" id="give" value=""/><br><br>
+        Jumlah yang ditebak: <input type="number" name="guess" id="guess" value=""/><br><br>
+        <button onclick="gundu(give, guess)">Result</button>
+        </form>
+      </div>
+    </div>
+  </body>
 <script src="script.js"></script>  
-</body>
 </html>
