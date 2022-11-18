@@ -11,10 +11,10 @@
         <h1>Let's play it!</h1>
           <p>Halo, mari bermain game! Kali ini kamu akan bermain dengan sebuah <b>Robot pintar</b>.</p>
           <p>Kalian berdua akan diberikan masing-masing <b>10 buah kelereng</b> di awal permainan.</p> 
-          <p>Kamu diminta untuk memberikan beberapa kelereng untuk dipertaruhkan (Robot juga).</p> 
-          <p><br>Total kelereng yang dipertaruhkan darimu dan Robot akan <b>diakumulasi</b>. </p> 
-          <p>Lalu kamu dan Robot harus <b>menebak</b> jumlah akumulasinya. </p> 
-            <h3><br><b><i>Pemenang: yang menebak <u>selisih akumulasi</u> paling sedikit!</i></b></h3>
+          <p>Kamu diminta untuk <b>mengembalikan</b> beberapa kelereng (Robot juga merandom).</p>
+          <p><br>Total kelereng yang dikembalikan darimu dan Robot akan <b>diakumulasi</b>. </p> 
+          <p>Kamu dan Robot harus <b>menebak</b> jumlah akumulasinya (Robot merandom). </p> 
+            <h3><br><b><i>menebak <u>selisih akumulasi</u> paling mendekati🏆</i></b></h3>
     
       <!--div class="actions">
         <a href="#">Start Game</a>
@@ -23,12 +23,16 @@
       
       <div class="game">
         <br><br>
-        <form id="frm1" action="/action_page.php">
-        Jumlah yang dikumpulkan: <input type="number" name="give" id="give" value=""/><br><br>
-        Jumlah yang ditebak: <input type="number" name="guess" id="guess" value=""/><br><br>
-        <button onclick="gundu(give, guess)">Result</button>
-        </form>
+        <h4>Jumlah yang dikembalikan</h4>
+        <input type="number" name="give" id="give" value=""/><br><br>
+        <h4>Tebakan jumlah akumulasi</h4>
+        <input type="number" name="guess" id="guess" value=""/><br><br>
+        <!--button onclick="lucky()" class="yellow">try your luck!</button-->
+        <button onclick="clearInput()" class="white">clear number</button>
+        <button onclick="gundu()" class="blue">check result</button>
       </div>
+
+      <div class="info"><h4><span class="big">HASIL<br></span></h4></div>
     </div>
   </body>
 <script src="script.js"></script>  
