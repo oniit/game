@@ -1,13 +1,14 @@
 body {
   background-color: lightblue;
-  margin: 50px auto;
-  padding: 50px 50px;
+  margin: 30px auto;
+  padding: 30px 30px;
   width: 70%;
+  min-width: 599px;
 }
 
 .box {
-	border: 70px solid white;
-	border-radius: 50px;
+	border: 50px solid white;
+	border-radius: 30px;
   background-color: white;
 }
 
@@ -23,7 +24,7 @@ h1 {
 h2 {
   color: #AAA;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 100;
   letter-spacing: 2px;
   margin: 0;
@@ -34,8 +35,19 @@ h2 {
 h3 {
   color: #004E89;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #333;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
   letter-spacing: 2px;
   margin: 0;
   text-align: center;
@@ -45,7 +57,7 @@ h3 {
 p {
   color: #333;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
   margin: 0;
   text-align: center;
@@ -65,7 +77,7 @@ u {
   border-radius: 3px;
   color: #004E89;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   display: inline-block;
   margin: 10px;
@@ -78,17 +90,43 @@ u {
 .game {
   color: #333;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
-  margin-right: 120px;
-  text-align: right;
+  text-align: center;
+}
+
+.info {
+	margin: 30px auto;
+  border: 30px solid lightblue;
+	border-radius: 10px;
+  background-color: lightblue;
+  color: #333;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 button {
-  padding: 7px;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #3498db;
   color: #171717;
 }
+
+button.blue {
+  background-color: lightblue;
+}
+
+button.white {
+  background-color: #eee;
+}
+
+button.yellow {
+  background-color: yellow;
+}
+
+.big {
+  font-size: 21px;
+  }
