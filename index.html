@@ -7,32 +7,44 @@
   </head>
   <body>
     <div class="box">  
-      <h2>A Simple Game</h2>
+      <div class="howto">
+        <h2>A Simple Game</h2>
         <h1>Let's play it!</h1>
-          <p>Halo, mari bermain game! Kali ini kamu akan bermain dengan sebuah <b>Robot pintar</b>.</p>
-          <p>Kalian berdua akan diberikan masing-masing <b>10 buah kelereng</b> di awal permainan.</p> 
-          <p>Kamu diminta untuk <b>mengembalikan</b> beberapa kelereng (Robot juga merandom).</p>
-          <p><br>Total kelereng yang dikembalikan darimu dan Robot akan <b>diakumulasi</b>. </p> 
-          <p>Kamu dan Robot harus <b>menebak</b> jumlah akumulasinya (Robot merandom). </p> 
-            <h3><br><b><i>menebak <u>selisih akumulasi</u> paling mendekati🏆</i></b></h3>
-    
-      <!--div class="actions">
-        <a href="#">Start Game</a>
-        <a href="#">Reset Game</a>
-      </div-->
-      
-      <div class="game">
-        <br><br>
-        <h4>Jumlah yang dikembalikan</h4>
-        <input type="number" name="give" id="give" value=""/><br><br>
-        <h4>Tebakan jumlah akumulasi</h4>
-        <input type="number" name="guess" id="guess" value=""/><br><br>
-        <!--button onclick="lucky()" class="yellow">try your luck!</button-->
-        <button onclick="clearInput()" class="white">clear number</button>
-        <button onclick="gundu()" class="blue">check result</button>
+        <br>
+        <p>Halo, mari bermain game! Kali ini Kamu akan bermain dengan sebuah <b>Robot pintar</b></p>
+        <p>Kalian berdua akan diberikan masing-masing <b>10 buah kelereng</b> di awal permainan</p> 
+        <br>
+        <p>Kamu diminta untuk <b>mengembalikan</b> beberapa kelereng (Robot juga merandom)</p>
+        <p>*Jika isianmu tidak sesuai (<b>< 0</b> atau <b>> 10</b>), jawabanmu akan dirandom oleh Sistem</p>
+        <p><br>Total kelereng yang dikembalikan darimu dan Robot akan <b>diakumulasi</b></p> 
+        <br>
+        <p>Kamu dan Robot harus <b>menebak</b> jumlah akumulasinya (Robot merandom lagi)</p>
+        <p>*Jika isianmu tidak sesuai (<b>lebih rendah dari yang dikembalikan</b>, <b>< 0</b>, atau <b>> 20</b>), <br>tebakanmu juga akan dirandom oleh Sistem</p>
+        <h3><br><b>PEMENANG:<br>menebak <y>selisih akumulasi</y> paling mendekati</b></h3>
       </div>
-
-      <div class="info"><h4><span class="big">HASIL<br></span></h4></div>
+      <div class="game">
+        <br>
+        <div class="caption">
+          <h4>Ketik jawabanmu di bawah ini</h4>
+          <p style="font-size:13px">*atau gunakan fitur <b><i style="color:#004E89">try your luck!</i></b> 
+ jika Kamu sedang merasa beruntung</p>
+        </div>
+        <div class="tebak">
+        <span class="br"></span>
+          <p style="font-size:19px">Jumlah yang <b>dikembalikan</b>
+          <span style="float:right"><input type="number" name="give" id="give" value="" min="0" max="10"/></span></p>
+        <span class="br"></span>
+          <p style="font-size:19px"><b>Tebakan</b> jumlah akumulasi
+          <span style="float:right"><input type="number" name="guess" id="guess" value="" min="0" max="20"/></span></p>
+        <span class="br"></span>
+        </div>
+        <div class="tombol">
+          <button onclick="lucky()" class="yellow"><i>try your luck!</i></button>
+          <button onclick="hapus()" class="white">clear</button>
+          <button onclick="gundu()" class="blue">check result</button>
+        </div>
+      </div>
+      <div class="info" id="info"></div>
     </div>
   </body>
 <script src="script.js"></script>  

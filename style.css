@@ -7,9 +7,10 @@ body {
 }
 
 .box {
-	border: 50px solid white;
+	border: 1px solid white;
 	border-radius: 30px;
   background-color: white;
+  padding: 49px;
 }
 
 h1 {
@@ -52,6 +53,7 @@ h4 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 p {
@@ -60,31 +62,10 @@ p {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
-  text-align: center;
 }
 
-u {
+y {
   background: yellow;
-}
-
-.actions {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.actions a {
-  background-color: #9DD1F1;
-  border-radius: 3px;
-  color: #004E89;
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-  display: inline-block;
-  margin: 10px;
-  padding: 12px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .game {
@@ -92,19 +73,19 @@ u {
   font-family: 'Yantramanav', sans-serif;
   font-size: 17px;
   font-weight: bold;
-  text-align: center;
+  border-radius: 7px;
+  background-color: rgb(173, 216, 230, 0.3);
+  margin: 30px auto;
+  padding-bottom: 15px;
+  width: 500px;
 }
 
 .info {
 	margin: 30px auto;
-  border: 30px solid lightblue;
-	border-radius: 10px;
-  background-color: lightblue;
   color: #333;
   font-family: 'Yantramanav', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: 2px;
   text-align: center;
 }
 
@@ -113,6 +94,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   color: #171717;
+  margin: 17px 0;
 }
 
 button.blue {
@@ -130,3 +112,44 @@ button.yellow {
 .big {
   font-size: 21px;
   }
+
+.big2 {
+  font-size: 27px;
+  }
+
+input {
+  width: 47px;
+  font-size: 17px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.vl {
+  border-top: 1px solid #333;
+  width: 110px;
+  margin: auto;
+}
+
+.br {
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.howto {
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+}
+
+.tebak {
+  width: 275px;
+  margin: auto;
+  padding-top: 9px;
+  padding-bottom: 1px;
+}
+
+.tombol {
+  text-align: center;
+}

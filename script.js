@@ -1,17 +1,24 @@
-function lucky(){
-  
+function random() {
+  return Math.floor(Math.random() * 11)
+}
+
+function lucky() {
+  const randomGive = document.getElementById('give').value = random();
+  document.getElementById('guess').value = random() + randomGive;
 }
 
 function gundu(){
-  const botGive = Math.floor(Math.random() * 11)
-  const botGuess = Math.floor(Math.random() * 11) + botGive
-  const playerGive = document.getElementById("give").value
-  const playerGuess = document.getElementById("guess").value
+  const botGive = random()
+  const botGuess = random() + botGive
+  const pGive = document.getElementById("give").value
+  playerGive = pGive > 10 || pGive < 0 ? random() : pGive
+  const pGuess = document.getElementById("guess").value
+  playerGuess = pGuess > 20 || pGuess < 0 || pGuess < playerGive ? random() + parseInt(playerGive) : pGuess
   const count = botGive + parseFloat(playerGive)
-  const hasil = `<h4><span class="big">HASIL<br></span></h4>
-  Kelereng yang <b>Kamu</b> pertaruhkan: ${playerGive}<br>
+  const hasil = `<h4><span class="big2">HASIL</span></h4>
+  <!--div class="vl"></div-->Kelereng yang <b>Kamu</b> pertaruhkan: ${playerGive}<br>
   Kelereng yang <b>Robot</b> pertaruhkan: ${botGive}<br>
-  &emsp;&emsp;&emsp;--------------------------------------------------- + <br>
+  &nbsp;---------------------------------------------------------- + <br>
   <b><span class="big">Total akumulasi: ${count}</span></b><br><br>
   Yang ditebak Robot: <b>${botGuess}</b>
   `
@@ -23,11 +30,11 @@ function gundu(){
     Cenayang kah?</span></h4>`)
   } else if (Math.abs(count-playerGuess) < Math.abs(count-botGuess)) {
     return (`${hasil} (Kamu jawab <b>${playerGuess}</b>!!!)<br><br>
-    <h4><span class="big">Tebakanmu lebih sedikit dari Robot,<br>
+    <h4><span class="big">Tebakanmu lebih mendekati dari Robot,<br>
     HOREEEE Selamat, kamu menang!</span></h4>`)
   } else if (Math.abs(count-playerGuess) > Math.abs(count-botGuess) && count != botGuess) {
     return (`${hasil} -> Kamu jawab <b>${playerGuess}</b> :((<br><br>
-    <h4><span class="big">Selisih tebakan Robot lebih sedikit,<br>
+    <h4><span class="big">Selisih tebakan Robot lebih mendekati,<br>
     OH TIDAK!!! Kamu kalah...</span></h4>`)
   } else if (Math.abs(count-playerGuess) > Math.abs(count-botGuess) && count == botGess) {
     return (`${hasil} -> Kamu jawab <b>${playerGuess}</b> :((<br><br>
@@ -46,7 +53,7 @@ function gundu(){
   info.innerHTML = winner
 }
 
-function clearInput(){
+function hapus(){
   var getValue1 = document.getElementById("give");
   var getValue2 = document.getElementById("guess");
   if (getValue1.value !="") {
@@ -55,4 +62,5 @@ function clearInput(){
   if (getValue2.value !="") {
     getValue2.value = "";
   }
+  document.getElementById("info").innerHTML = ""
  }
